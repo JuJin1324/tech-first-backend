@@ -1,7 +1,7 @@
-package com.techfirst.backend.hexagonal.adapter.in.web;
+package com.techfirst.backend.hexagonal.api.rest;
 
-import com.techfirst.backend.hexagonal.core.domain.Customer;
-import com.techfirst.backend.hexagonal.core.port.in.CustomerUseCase;
+import com.techfirst.backend.hexagonal.domain.Customer;
+import com.techfirst.backend.hexagonal.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class CustomerRestController {
 
-    private final CustomerUseCase customerUseCase;
+    private final CustomerService customerService;
 
     @GetMapping("/api/customers/{id}")
     public Customer getCustomer(@PathVariable Long id) {
-        return customerUseCase.getCustomer(id);
+        return customerService.getCustomer(id);
     }
 }

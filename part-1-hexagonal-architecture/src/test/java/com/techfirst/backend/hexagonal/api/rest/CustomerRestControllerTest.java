@@ -1,7 +1,7 @@
-package com.techfirst.backend.hexagonal.adapter.in.web;
+package com.techfirst.backend.hexagonal.api.rest;
 
-import com.techfirst.backend.hexagonal.core.domain.Customer;
-import com.techfirst.backend.hexagonal.core.port.in.CustomerUseCase;
+import com.techfirst.backend.hexagonal.domain.Customer;
+import com.techfirst.backend.hexagonal.service.CustomerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -21,7 +21,7 @@ class CustomerRestControllerTest {
     private MockMvc mockMvc;
 
     @MockitoBean
-    private CustomerUseCase customerUseCase;
+    private CustomerService customerService;
 
     @Test
     void getCustomer_ShouldReturnCustomerJson() throws Exception {
@@ -29,7 +29,7 @@ class CustomerRestControllerTest {
         long customerId = 1L;
         var customer = new Customer(customerId, "Tech First", "tech@first.com");
 
-        given(customerUseCase.getCustomer(customerId)).willReturn(customer);
+        given(customerService.getCustomer(customerId)).willReturn(customer);
 
         // when & then
         mockMvc.perform(get("/api/customers/{id}", customerId))

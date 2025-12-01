@@ -1,4 +1,4 @@
-package com.techfirst.backend.hexagonal.adapter.in.soap.dto;
+package com.techfirst.backend.hexagonal.api.soap.dto;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;

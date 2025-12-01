@@ -1,7 +1,7 @@
-package com.techfirst.backend.hexagonal.adapter.in.soap;
+package com.techfirst.backend.hexagonal.api.soap;
 
-import com.techfirst.backend.hexagonal.core.domain.Customer;
-import com.techfirst.backend.hexagonal.core.port.in.CustomerUseCase;
+import com.techfirst.backend.hexagonal.domain.Customer;
+import com.techfirst.backend.hexagonal.service.CustomerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ class CustomerSoapEndpointTest {
     private ApplicationContext applicationContext;
 
     @MockitoBean
-    private CustomerUseCase customerUseCase;
+    private CustomerService customerService;
 
     private MockWebServiceClient mockClient;
 
@@ -51,7 +51,7 @@ class CustomerSoapEndpointTest {
         long customerId = 1L;
         var customer = new Customer(customerId, "Tech First", "tech@first.com");
 
-        given(customerUseCase.getCustomer(customerId)).willReturn(customer);
+        given(customerService.getCustomer(customerId)).willReturn(customer);
 
         Source requestPayload = new StringSource(
                 "<ns2:getCustomerRequest xmlns:ns2=\"http://techfirst.com/backend/hexagonal/soap\">" +
