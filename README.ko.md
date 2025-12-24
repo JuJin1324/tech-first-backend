@@ -18,6 +18,7 @@
 ```
 tech-first-backend/
 ├── part-2-rest-and-soap-adapter/  # 두 번째 튜토리얼 파트의 코드 (REST와 SOAP 어댑터)
+├── part-3-honest-factory/       # 세 번째 튜토리얼 파트의 코드 (Honest Factory 및 Railway Oriented Programming)
 └── docs/                          # 기술 문서 및 다이어그램
 ```
 
@@ -26,3 +27,4 @@ tech-first-backend/
 각 파트의 코드를 실행하는 상세한 방법은 각 모듈 디렉터리 안의 `README.ko.md` 파일을 참고해 주세요.
 
 *   **[Part 2: REST와 SOAP 어댑터 (REST and SOAP Adapter)](./part-2-rest-and-soap-adapter/README.ko.md)**
+*   **[Part 3: Honest Factory & Railway Oriented Programming](./part-3-honest-factory/README.ko.md)**
