@@ -50,7 +50,6 @@ public class MemberService {
     // Repository 저장 로직을 Either로 감싸서 예외를 ErrorCode로 변환
     private Either<ErrorCode, Member> saveToRepository(Member member) {
         return Try.of(() -> memberRepository.save(member))
-                .toEither()
-                .mapLeft(throwable -> ErrorCode.DB_ERROR);
+                .toEither(ErrorCode.DB_ERROR);
     }
 }
