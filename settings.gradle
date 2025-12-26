@@ -1,3 +1,4 @@
 rootProject.name = 'tech-first-backend'
 include 'part-2-rest-and-soap-adapter'
 include 'part-3-honest-factory'
+include 'part-4-pragmatic-fp'

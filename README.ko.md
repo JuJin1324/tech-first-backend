@@ -19,6 +19,7 @@
 tech-first-backend/
 ├── part-2-rest-and-soap-adapter/  # 두 번째 튜토리얼 파트의 코드 (REST와 SOAP 어댑터)
 ├── part-3-honest-factory/       # 세 번째 튜토리얼 파트의 코드 (Honest Factory 및 Railway Oriented Programming)
+├── part-4-pragmatic-fp/         # 네 번째 튜토리얼 파트의 코드 (실용주의 FP와 하이브리드 도메인 엔티티)
 └── docs/                          # 기술 문서 및 다이어그램
 ```
 
@@ -28,3 +29,4 @@ tech-first-backend/
 
 *   **[Part 2: REST와 SOAP 어댑터 (REST and SOAP Adapter)](./part-2-rest-and-soap-adapter/README.ko.md)**
 *   **[Part 3: Honest Factory & Railway Oriented Programming](./part-3-honest-factory/README.ko.md)**
+*   **[Part 4: 실용주의 FP - 하이브리드 도메인 엔티티 (Pragmatic FP & Hybrid Domain Entity)](./part-4-pragmatic-fp/README.ko.md)**

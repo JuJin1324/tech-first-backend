@@ -19,6 +19,7 @@ This project consists of the following main directories:
 tech-first-backend/
 ├── part-2-rest-and-soap-adapter/  # Code for the second tutorial part (REST and SOAP Adapter)
 ├── part-3-honest-factory/       # Code for the third tutorial part (Honest Factory & Railway Oriented Programming)
+├── part-4-pragmatic-fp/         # Code for the fourth tutorial part (Pragmatic FP & Hybrid Domain Entity)
 └── docs/                          # Technical documentation and diagrams
 ```
 
@@ -28,3 +29,4 @@ For detailed instructions on how to run the code for each part, please refer to 
 
 *   **[Part 2: REST and SOAP Adapter](./part-2-rest-and-soap-adapter/README.md)**
 *   **[Part 3: Honest Factory & Railway Oriented Programming](./part-3-honest-factory/README.md)**
+*   **[Part 4: Pragmatic FP - Hybrid Domain Entity](./part-4-pragmatic-fp/README.md)**

@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework:spring-tx'
+    implementation 'io.vavr:vavr:0.10.4'
+    // Lombok and Test dependencies are inherited from root
+}
